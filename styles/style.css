@@ -303,7 +303,7 @@ dialog {
   padding: 30px;
   max-inline-size: 353px;
   inline-size: 100%;
-  display: none; 
+  display: none;
 }
 
 dialog::backdrop {
