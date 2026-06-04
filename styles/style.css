@@ -113,16 +113,17 @@
   color: var(--text-color);
   text-transform: uppercase;
   line-height: normal;
-  text-shadow: 2px 2px 2px var(--background-color, #fff);
+  text-shadow: 
+    -1px -1px 0 var(--stroke-color),
+    1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color),
+    1px 1px 0 var(--stroke-color);
   -webkit-text-stroke: 1px var(--stroke-color);
-  text-stroke: 1px var(--stroke-color);
+  text-wrap-style: 1px var(--stroke-color);
 }
 
-@supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
-
-  .logo {
-    -webkit-text-stroke: 1px var(--background-color, #fff);
-    text-stroke: 1px var(--background-color, #fff);
+@supports (-webkit-text-stroke: 1px var(--stroke-color)) {
+  .card__label {
     text-shadow: none;
   }
 }
