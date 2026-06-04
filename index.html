@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Закрывающий тег</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <!-- Фавиконки -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  </head>
+  <body class="page">
+
+    <!-- SVG Symbol для дискеты -->
+    <svg style="display:none">
+      <symbol id="floppy" viewBox="0 0 39 39">
+        <g fill="currentColor">
+          <rect x="0" y="0" width="21" height="21" rx="0"/>
+          <rect x="3" y="3" width="15" height="11" fill="transparent" stroke="currentColor" stroke-width="1"/>
+          <rect x="6" y="14" width="9" height="4" fill="var(--bg-color)"/>
+        </g>
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <a href="#" class="header__logo">&lt;/HTML&gt;</a>
+      <h1 class="header__title">Закрывающий тег</h1>
+    </header>
+
+    <main class="content">
+      <ul class="cards__list">
+        <li class="cards__list-item">
+      <!-- Карточка 1 -->
+          <article class="card">
+            <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="images/beginning.avif" type="image/avif">
+                <source srcset="images/beginning.webp" type="image/webp">
+                <img class="card__image filter-hue-rotate" src="images/beginning.png" 
+                alt="Дорога" loading="lazy">
+              </picture>
+              <span class="card__label">&lt;Начало&gt;</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p class="card__text">
+                Время оглянуться назад с благодарностью. То самое «начало пути» 
+                было прекрасно своей чистотой. Тогда главным было не ускоряться, 
+                а проникнуться основами, впустить процесс и настроиться на учёбу 
+                как на приключение.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button" type="button">
+                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g class="heart"><path class="contour" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="main-body" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="core" d="M12 17.27L18.18 12l-1.64-1.27L12 14.82l-4.54-3.09L5.82 12z"/></g><path class="sparks" d="M12 2v2M4.93 4.93l1.41 1.41M2 12h2M4.93 19.07l1.41-1.41M12 20v2M19.07 19.07l-1.41-1.41M22 12h-2M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="card__like-button button" type="button"><span class="button__text">Like</span></button>
+            </div>
+          </article>
+        </li>
+
+          <!-- Карточка 2 -->
+        <li class="cards__list-item">
+          <article class="card">
+            <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="images/clean sheet.avif" type="image/avif">
+                <source srcset="images/clean sheet.webp" type="image/webp">
+                <img class="card__image filter-blur"
+                src="images/clean sheet.png" alt="На столе лежит открытый ноутбук и радом чистый лист бумаги" loading="lazy">
+              </picture>
+              <span class="card__label">&lt;Чистый лист&gt;</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">На первых этапах мы работали со страхами и 
+                сомнениями, которые часто испытывают новички. Один из них — страх
+                перед чистым листом. Это, конечно же, намного сложнее, чем боязнь 
+                куска бумаги. Часто за этим ощущением скрываются более глубокие 
+                вопросы: с чего начать? а вдруг будет слишком сложно? что, если 
+                я не справлюсь?
+              </p>
+              <p class="card__text">
+                Поэтому я просто начинаю писать: ставлю каркас, добавляю 
+                заголовок — и страх отступает, потому что чистое полотно 
+                превращается в знакомую разметку.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button" type="button">
+                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g class="heart"><path class="contour" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="main-body" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="core" d="M12 17.27L18.18 12l-1.64-1.27L12 14.82l-4.54-3.09L5.82 12z"/></g><path class="sparks" d="M12 2v2M4.93 4.93l1.41 1.41M2 12h2M4.93 19.07l1.41-1.41M12 20v2M19.07 19.07l-1.41-1.41M22 12h-2M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="card__like-button button" type="button"><span class="button__text">Like</span></button>
+            </div>
+          </article>
+        </li>
+
+          <!-- Карточка 3 -->
+        <li class="cards__list-item">
+          <article class="card">
+            <h2 class="card__title">1 спринт: А если не получится?</h2>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="images/first.avif" type="image/avif">
+                <source srcset="images/first.webp" type="image/webp">
+                <img class="card__image filter-saturate-invert"
+                src="images/first.png" alt="Лестница, поднимающаяся вверх, ввиде спирали. Вид снизу" loading="lazy">
+              </picture>
+              <span class="card__label">&lt;Первый проект&gt;</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">Первый проект — позади! Но это всё ещё самое начало
+                пути. Радость могла быстро померкнуть и смениться ожиданием провала. 
+                Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+              </p>
+              <p class="card__text">Поэтому я теперь просто говорю себе: «Молодец, 
+                закрыл задачу. А теперь открываю следующую — и не важно, будет
+                она лёгкой или сложной».
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button" type="button">
+                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g class="heart"><path class="contour" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="main-body" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="core" d="M12 17.27L18.18 12l-1.64-1.27L12 14.82l-4.54-3.09L5.82 12z"/></g><path class="sparks" d="M12 2v2M4.93 4.93l1.41 1.41M2 12h2M4.93 19.07l1.41-1.41M12 20v2M19.07 19.07l-1.41-1.41M22 12h-2M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="card__like-button button" type="button"><span class="button__text">Like</span></button>
+            </div>
+          </article>
+        </li>
+
+          <!-- Карточка 4 -->
+        <li class="cards__list-item">   
+          <article class="card">
+            <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="images/ideal.avif" type="image/avif">
+                <source srcset="images/ideal.webp" type="image/webp">
+                <img class="card__image filter-contrast-sepia-hue-rotate"
+                src="images/ideal.png" alt="Доска в которой хаотично лежат разнокалиберные бруски с буквами" loading="lazy">
+              </picture>
+              <span class="card__label">&lt;где идеал?&gt;</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">На этом этапе вы уже достаточно разбирались в 
+                основах вёрстки, чтобы понять, как много ещё впереди. Вы могли 
+                попытаться погнаться за идеалом и понять, что он недостижим. А, 
+                может, вы вовсе и не подвержены перфекционизму и вместо того, 
+                чтобы сделать идеально, старались просто сделать.
+              </p>
+              <p class="card__text">Оказалось, что умение вовремя остановиться —
+                это тоже навык, и он тренируется не хуже, чем умение центрировать 
+                блок.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button" type="button">
+                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g class="heart"><path class="contour" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="main-body" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="core" d="M12 17.27L18.18 12l-1.64-1.27L12 14.82l-4.54-3.09L5.82 12z"/></g><path class="sparks" d="M12 2v2M4.93 4.93l1.41 1.41M2 12h2M4.93 19.07l1.41-1.41M12 20v2M19.07 19.07l-1.41-1.41M22 12h-2M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="card__like-button button" type="button"><span class="button__text">Like</span></button>
+            </div>
+          </article>
+        </li>
+
+          <!-- Карточка 5 -->
+        <li class="cards__list-item">
+          <article class="card">
+            <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="images/nearby.avif" type="image/avif">
+                <source srcset="images/nearby.webp" type="image/webp">
+                <img class="card__image filter-saturate"
+                src="images/nearby.png" alt="Ноги спортсменов, бегущих марафон." loading="lazy">
+              </picture>
+              <span class="card__label">&lt;кто там?&gt;</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">Всё это время вы были не одиноки (хотя, возможно, 
+                иногда и чувствовали, что одни против целого мира). Вас окружали 
+                одногруппники, команда сопровождения и просто близкие люди, которым 
+                можно пожаловаться, если очередной макет просто так не поддавался. 
+                Осваивать что-то новое легче, когда рядом есть единомышленники, не 
+                правда ли?
+              </p>
+              <p class="card__text">Честно говоря, иногда казалось, что только у 
+                меня всё ломается и ничего не работает. А потом заглядываешь в 
+                общий чат — и видишь, что такие же вопросы задают другие, и ты не 
+                один тонешь в отступах и багах. 
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button" type="button">
+                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g class="heart"><path class="contour" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="main-body" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="core" d="M12 17.27L18.18 12l-1.64-1.27L12 14.82l-4.54-3.09L5.82 12z"/></g><path class="sparks" d="M12 2v2M4.93 4.93l1.41 1.41M2 12h2M4.93 19.07l1.41-1.41M12 20v2M19.07 19.07l-1.41-1.41M22 12h-2M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="card__like-button button" type="button"><span class="button__text">Like</span></button>
+            </div>
+          </article>
+        </li>
+
+          <!-- Карточка 6 -->
+        <li class="cards__list-item">
+          <article class="card">
+            <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="images/bugs.avif" type="image/avif">
+                <source srcset="images/bugs.webp" type="image/webp">
+                <img class="card__image filter-saturate-invert"
+                src="images/bugs.png" alt="Пучок смотанных разноцветных проводов" loading="lazy">
+              </picture>
+              <span class="card__label">&lt;Баг&gt;</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">На этом курсе вы постоянно решали разные задачи. В 
+                какой-то момент вам могло показаться, что решения просто иссякли. 
+                Значит, пришло время посмотреть на задачу под другим углом.
+              </p>
+              <p class="card__text">Бывает, сидишь над одной секцией и перебираешь то флексы, 
+                то гриды, то позишны — и всё не то. Тогда я закрываю ноутбук минут на час,
+                иду прогуляться по комнате или поговорить с кем-то о чём угодно, 
+                кроме вёрстки. Когда возвращаюсь, решение приходит уже само.
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button" type="button">
+                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g class="heart"><path class="contour" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="main-body" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="core" d="M12 17.27L18.18 12l-1.64-1.27L12 14.82l-4.54-3.09L5.82 12z"/></g><path class="sparks" d="M12 2v2M4.93 4.93l1.41 1.41M2 12h2M4.93 19.07l1.41-1.41M12 20v2M19.07 19.07l-1.41-1.41M22 12h-2M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="card__like-button button" type="button"><span class="button__text">Like</span></button>
+            </div>
+          </article>
+        </li>
+
+          <!-- Карточка 7 -->
+        <li class="cards__list-item">
+          <article class="card">
+            <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="images/ritual.avif" type="image/avif">
+                <source srcset="images/ritual.webp" type="image/webp">
+                <img class="card__image filter-grayscale"
+                src="images/ritual.png" alt="Маленькие проводные наушники и уголок телефона" loading="lazy">
+              </picture>
+              <span class="card__label">&lt;Ритуал&gt;</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">Во время учёбы часто возникает чувство, когда не знаешь,
+                за что хвататься. Вроде и проектную пора сдавать, и задачи хочется 
+                порешать, и в теории получше разобраться, и жизнь не забыть пожить. 
+                В такие моменты очень нужна концентрация. Вспомните, откуда вы её 
+                черпали.
+              </p>
+              <p class="card__text">Я понял, что концентрация рождается из ритуала. 
+                Для меня это чашка чая, наушники с инструментальной музыкой. 
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button" type="button">
+                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g class="heart"><path class="contour" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="main-body" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="core" d="M12 17.27L18.18 12l-1.64-1.27L12 14.82l-4.54-3.09L5.82 12z"/></g><path class="sparks" d="M12 2v2M4.93 4.93l1.41 1.41M2 12h2M4.93 19.07l1.41-1.41M12 20v2M19.07 19.07l-1.41-1.41M22 12h-2M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="card__like-button button" type="button"><span class="button__text">Like</span></button>
+            </div>
+          </article>
+        </li>
+
+          <!-- Карточка 8 -->
+        <li class="cards__list-item">
+          <article class="card">
+            <h2 class="card__title">«Сейчас я здесь»</h2>
+            <div class="card__image-wrapper">
+              <picture>
+                <source srcset="images/sky.avif" type="image/avif">
+                <source srcset="images/sky.webp" type="image/webp">
+                <img class="card__image filter-brightness-saturate-hue-rotate"
+                src="images/sky.png" alt="Воздушный шар в небе" loading="lazy">
+              </picture>
+              <span class="card__label">&lt;Полетели&gt;</span>
+            </div>
+            <div class="card__content">
+              <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. Но 
+                это только начало. Во-первых, впереди ещё много материала про 
+                «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. 
+                Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его 
+                полностью не получится, но это тот случай, когда важен сам процесс 
+                познания. Ведь часто путь — и есть результат.
+              </p>
+                <p class="card__text">Сначала мысль «учиться придётся всегда» меня 
+                  немного давила. Казалось: ну когда же уже можно будет выдохнуть и 
+                  просто работать на автомате? А потом я попробовал подойти к вёрстке 
+                  как к хобби — как к игре на гитаре или рисованию. 
+              </p>
+            </div>
+            <div class="card__actions">
+              <button class="card__icon-button" type="button">
+                <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <g class="heart"><path class="contour" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="main-body" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path class="core" d="M12 17.27L18.18 12l-1.64-1.27L12 14.82l-4.54-3.09L5.82 12z"/></g><path class="sparks" d="M12 2v2M4.93 4.93l1.41 1.41M2 12h2M4.93 19.07l1.41-1.41M12 20v2M19.07 19.07l-1.41-1.41M22 12h-2M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="card__like-button button" type="button"><span class="button__text">Like</span></button>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+    </main>
+    <footer class="footer">
+      <button class="save-button button"
+        type="button"
+        onclick="document.getElementById('dialog-id').showModal()" aria-controls="dialog-id">
+        <svg class="button__icon" width="21" height="21" >
+          <use href="#floppy"/>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </footer>
+
+
+    <dialog class="dialog" id="dialog-id">
+      <svg class="dialog__icon"  width="39" height="39">
+        <use href="#floppy" />
+      </svg>
+      <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
+      <form class="dialog__form" method="dialog">
+        <button class="dialog__button button" type="submit">
+          <span class="button__text">ок</span>
+        </button>
+      </form>
+    </dialog>
+    <script src="./scripts/like.js"></script>
+  </body>
+</html>
