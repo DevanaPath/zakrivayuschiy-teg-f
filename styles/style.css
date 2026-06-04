@@ -118,7 +118,7 @@
   text-stroke: 1px var(--stroke-color);
 }
 
-@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+@supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
 
   .logo {
     -webkit-text-stroke: 1px var(--background-color, #fff);
