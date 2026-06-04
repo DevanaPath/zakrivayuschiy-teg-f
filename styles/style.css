@@ -163,17 +163,15 @@
   transition: box-shadow 0.3s ease;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   gap: 8px;
 }
 
-/* Фокус на кнопках Like, Сохранить, ОК */
 .button:focus {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
-/* Текст кнопки для mix-blend-mode */
 .button__text {
   position: relative;
   z-index: 1;
@@ -181,7 +179,6 @@
   color: #fff;
 }
 
-/* Иконка дискеты внутри кнопки */
 .button__icon {
   position: relative;
   z-index: 1;
@@ -211,7 +208,7 @@
   padding: 15px 20px;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   gap: 8px;
 } 
 
