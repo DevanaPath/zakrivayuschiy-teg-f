@@ -114,7 +114,6 @@
   text-transform: uppercase;
   line-height: normal;
   text-shadow: 2px 2px 2px var(--background-color, #fff);
-  /* Обводка текста */
   -webkit-text-stroke: 1px var(--stroke-color);
   text-stroke: 1px var(--stroke-color);
 }
@@ -236,25 +235,23 @@
 .like-icon {
   transform-origin: center;
   display: block;
-  block-size: 37px;
 }
 
 .like-icon .contour {
-  transition: fill 0.3s ease 0.06s;
+  transition: fill 0.1s linear;
 }
 
 .like-icon .main-body {
   fill: transparent;
-  transition: fill 0.3s ease 0.05s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .core {
   fill: transparent;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon .sparks {
-  fill: var(--animation-fill-color);
   opacity: 0;
 }
 
@@ -265,6 +262,7 @@
 
 .like-icon:hover .main-body {
   fill: var(--accent-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .core {
