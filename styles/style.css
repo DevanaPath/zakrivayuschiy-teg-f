@@ -98,7 +98,7 @@
 }
 
 .card__content {
-  padding: 25px; 
+  padding: 25px;
   border-top: none;
   border-bottom: none;
 }
@@ -318,7 +318,6 @@
   animation: sparks-opacity 0.3s ease-in 0.3s 1 alternate;
 }
 
-
 dialog {
   border: 2px solid var(--accent-color);
   background-color: var(--background-color, #fff);
@@ -403,7 +402,7 @@ dialog::backdrop {
   }
 
   .card__label {
-    inset-inline-end: 10px; 
+    inset-inline-end: 10px;
   }
 
    .header__logo {
