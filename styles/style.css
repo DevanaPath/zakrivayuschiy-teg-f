@@ -62,6 +62,7 @@
 
 .card {
   inline-size: 100%;
+  box-sizing: border-box;
   border: 2px solid var(--accent-color, #000);
   background-color: var(--background-color, #fff);
 }
@@ -193,8 +194,6 @@
   z-index: 1;
   inline-size: 21px;
   block-size: 21px;
-  fill: var(--accent-color, #000);
-  mix-blend-mode: difference;
 }
 
 .button::before {
@@ -343,8 +342,6 @@ dialog::backdrop {
   inline-size: 39px;
   position: relative;
   z-index: 1;
-  fill: currentColor;
-  mix-blend-mode: difference;
 }
 
 .dialog__title {
@@ -407,10 +404,6 @@ dialog::backdrop {
 
    .header__logo {
     font-size: clamp(2.5rem, -0.7727rem + 16.3636vw, 3.0625rem);
-  }
-
-  .card {
-    width: 100%;
   }
 
   .save-button {
