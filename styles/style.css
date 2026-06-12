@@ -2,7 +2,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-main, sans-serif), sans-serif;;
+  font-family: var(--font-main, sans-serif), sans-serif;
   font-variation-settings: 'wght' var(--card-text-weight);
   color: var(--text-color);
   background-color: var(--bg-color);
