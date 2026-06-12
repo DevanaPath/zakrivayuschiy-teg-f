@@ -2,7 +2,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-main, sans-serif);
+  font-family: var(--font-main, sans-serif), sans-serif;;
   font-variation-settings: 'wght' var(--card-text-weight);
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -19,7 +19,7 @@
   padding: 130px 0;
   margin: 0 auto 96px;
   text-align: center;
-  font-family: var(--font-accent, fantasy);
+  font-family: var(--font-accent, fantasy), fantasy;
   background-color: var(--background-color, #fff);
   border: 2px solid var(--accent-color, #000);
   text-transform: uppercase;
@@ -87,7 +87,7 @@
 }
 
 .card__content {
-  padding: 25px;
+  padding: 25px 25px 0;
   border-top: none;
   border-bottom: none;
 }
@@ -96,7 +96,7 @@
   position: absolute;
   inset-block-start: 25px;
   inset-inline-end: 25px;
-  font-family: var(--font-accent, fantasy);
+  font-family: var(--font-accent, fantasy), fantasy;
   font-size: 0.875rem;
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -118,13 +118,12 @@
 }
 
 .card__text {
-  padding: 10px;
   font-size: 18px;
   line-height: 1.2;
 }
 
 .card__text:not(:last-of-type) {
-  margin-block-end: 27px;
+  margin-block-end: 25px;
 }
 
 .card__text:last-of-type {
@@ -149,7 +148,7 @@
   background-color: var(--background-color, #fff);
   color: var(--text-color);
   cursor: pointer;
-  font-family: var(--font-accent, fantasy);
+  font-family: var(--font-accent, fantasy), fantasy;
   font-size: 14px;
   line-height: 0.9;
   padding: 9px 17px;
@@ -182,6 +181,8 @@
   z-index: 1;
   inline-size: 21px;
   block-size: 21px;
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .button::before {
@@ -330,10 +331,12 @@ dialog::backdrop {
   inline-size: 39px;
   position: relative;
   z-index: 1;
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .dialog__title {
-  font-family: var(--font-accent), fantasy;
+  font-family: var(--font-accent, fantasy), fantasy;
   text-transform: uppercase;
   line-height: 1.5;
   font-size: 14px;
@@ -379,7 +382,7 @@ dialog::backdrop {
 
 @media (max-width: 480px) {
   .header {
-    padding-block-start: 120px;
+    padding: 120px 0;
   }
 
   .header__title {
